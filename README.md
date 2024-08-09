@@ -15,9 +15,13 @@ npm install react-icons --save
 
 # PRD - Product Requirements Document (Template)
 
-# Introdução & objetivo
+# Introdução & Objetivo
 
-O Sistema de Gerenciamento de Manutenção é uma aplicação web destinada a otimizar o gerenciamento das atividades de manutenção em uma grande empresa industrial que fabrica peças automotivas. O objetivo principal é resolver problemas relacionados à falta de organização, comunicação ineficiente e perda de tempo e produtividade, criando uma solução que permita melhor controle e visibilidade sobre as operações de manutenção. Diferencia-se dos concorrentes ao proporcionar uma interface amigável e intuitiva, além de funcionalidades robustas de gerenciamento de máquinas, manutenções, estoque de peças e equipes, tudo isso de forma integrada e segura.
+Imagine uma grande empresa industrial que fabrica peças automotivas. Seus funcionários enfrentam desafios diários, como falta de organização, comunicação ineficiente e perda de tempo. Agora, visualize um sistema que transforma essa realidade. 
+
+Apresentamos o **Sistema de Gerenciamento de Manutenção**, uma aplicação web projetada para otimizar a gestão das atividades de manutenção. Nosso objetivo é solucionar problemas críticos que afetam a produtividade da equipe, proporcionando controle e visibilidade sobre as operações de manutenção. 
+
+O que nos diferencia dos concorrentes? Nossa interface é amigável e intuitiva, permitindo que os usuários naveguem facilmente. Além disso, oferecemos funcionalidades robustas que abrangem o gerenciamento de máquinas, manutenções, estoque de peças e equipes, tudo integrado em um ambiente seguro. Com este sistema, sua equipe poderá se concentrar no que realmente importa: aumentar a eficiência e a produtividade da empresa.
 
 # Por que implementar isto?
 A necessidade de inovação em um setor que enfrenta desafios constantes em eficiência e segurança. A visão é criar uma solução que não apenas resolva problemas imediatos, mas também posicione a empresa na vanguarda da transformação digital, elevando seus padrões operacionais e competitividade.
@@ -53,23 +57,53 @@ O público-alvo principal são empresas industriais, especialmente aquelas que o
 
 # Requisitos Funcionais
 
-1. *F1: Gerenciamento de Máquinas:* Sistema deve permitir o cadastro de máquinas com informações detalhadas, incluindo histórico de manutenção. *P1*
-   - Critérios de aceitação: Usuário pode adicionar, visualizar e editar informações de máquinas; sistema gera relatórios de histórico.
-2. *F2: Gerenciamento de Manutenções:* Cadastro e acompanhamento de solicitações de manutenção, com gestão de status e atribuição de equipes. *P1*
-   - Critérios de aceitação: Usuário pode criar, atualizar e monitorar solicitações; sistema notifica equipes designadas.
-3. *F3: Controle de Estoque de Peças:* Registro e acompanhamento de peças de reposição, com visualização de estoque em tempo real. *P2*
-   - Critérios de aceitação: Usuário pode registrar entrada e saída de peças; sistema gera alertas de baixo estoque.
+### User Stories
 
-### Casos de uso
+1. **User Story 1: Gerenciamento de Máquinas**
+   - **Como um** administrador,
+   - **Quero** cadastrar máquinas com informações detalhadas, incluindo histórico de manutenção,
+   - **Para que** eu possa monitorar o estado e a performance de cada máquina.
+   - **Critérios de Aceitação**:
+     - O usuário pode adicionar, visualizar e editar informações sobre máquinas.
+     - O sistema gera relatórios do histórico de manutenção para cada máquina.
 
-> *Caso de uso 1:* O gerente de manutenção utiliza o sistema para gerar relatórios semanais de manutenção para otimizar o planejamento de recursos.
-> 
+2. **User Story 2: Gerenciamento de Manutenções**
+   - **Como um** técnico de manutenção,
+   - **Quero** registrar e acompanhar solicitações de manutenção,
+   - **Para que** eu possa gerenciar o status e a atribuição das tarefas de forma eficiente.
+   - **Critérios de Aceitação**:
+     - O usuário pode criar, atualizar e monitorar solicitações de manutenção.
+     - O sistema notifica as equipes designadas sobre novas solicitações e atualizações.
 
-> *Caso de uso 2:* Técnicos acessam o sistema via dispositivos móveis para atualizar o status das manutenções em tempo real, melhorando a comunicação.
-> 
+3. **User Story 3: Controle de Estoque de Peças**
+   - **Como um** responsável pelo estoque,
+   - **Quero** registrar e acompanhar o estoque de peças de reposição,
+   - **Para que** eu possa garantir que sempre haja peças disponíveis para manutenção.
+   - **Critérios de Aceitação**:
+     - O usuário pode registrar entradas e saídas de peças no estoque.
+     - O sistema gera alertas quando o estoque de peças estiver baixo.
 
-> *Caso de uso 3:* Administradores configuram novos usuários e ajustam permissões de acesso conforme as necessidades da equipe.
-> 
+### Mapeamento de User Stories
+
+| **User Story**                   | **Prioridade** |
+|----------------------------------|-----------------|
+| Gerenciamento de Máquinas        | P1              |
+| Gerenciamento de Manutenções     | P1              |
+| Controle de Estoque de Peças     | P2              |
+
+### Casos de Uso
+
+- **Caso de Uso 1: Geração de Relatórios de Manutenção**
+  - **Ator**: Gerente de Manutenção
+  - **Descrição**: O gerente de manutenção utiliza o sistema para gerar relatórios semanais de manutenção, otimizando o planejamento de recursos e identificando áreas que necessitam de atenção.
+
+- **Caso de Uso 2: Atualização de Status em Tempo Real**
+  - **Ator**: Técnicos de Manutenção
+  - **Descrição**: Técnicos acessam o sistema via dispositivos móveis para atualizar o status das manutenções em tempo real, melhorando a comunicação e a eficiência na execução das tarefas.
+
+- **Caso de Uso 3: Configuração de Usuários**
+  - **Ator**: Administradores
+  - **Descrição**: Administradores configuram novos usuários e ajustam permissões de acesso conforme as necessidades da equipe, garantindo que cada membro tenha as informações e ferramentas necessárias para seu trabalho.
 
 ---
 
